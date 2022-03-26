@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: words
+logging:
+  file:
+    path: logs
+
