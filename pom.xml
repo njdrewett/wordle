@@ -20,6 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <org.codehaus.mojo.exec-maven-plugin>1.6.0</org.codehaus.mojo.exec-maven-plugin>
         <org.springframework.boot.version>2.6.2</org.springframework.boot.version>
+        <maven.failsafe.plugin>3.0.0-M6</maven.failsafe.plugin>
     </properties>
 
     <dependencyManagement>
@@ -30,6 +31,12 @@
                 <version>${org.springframework.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${maven.failsafe.plugin}</version>
+                <type>maven-plugin</type>
             </dependency>
         </dependencies>
     </dependencyManagement>

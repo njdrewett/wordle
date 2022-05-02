@@ -1,6 +1,7 @@
 package com.drewett.words.controller;
 
 import com.drewett.words.service.WordsService;
+import com.drewett.words.service.WordsServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

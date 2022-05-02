@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Word Repository Test
@@ -44,14 +43,14 @@ public class WordsServiceIT {
     public void isAWordTrue() {
         final boolean isAWord = wordsService.isAWord("Abbey");
 
-        assert true == isAWord;
+        assert isAWord;
     }
 
     @Test
     public void isAWordFalse() {
         final boolean isAWord = wordsService.isAWord("dsads");
 
-        assert false == isAWord;
+        assert !isAWord;
     }
 
 

@@ -30,8 +30,8 @@ public class FileWordRepository implements WordRepository {
         this.wordsFolder = wordsFolder;
     }
 
-    private List<String> readWordsFromFile(final int numberOfLetters) {
-        final String fileName = concatFilePathAndName(numberOfLetters);
+    private List<String> readWordsFromFile() {
+        final String fileName = concatFilePathAndName();
         log.info("Reading {}", fileName);
         List<String> words = new ArrayList<>();
         ClassPathResource resource = new ClassPathResource(fileName);
@@ -46,7 +46,7 @@ public class FileWordRepository implements WordRepository {
         }
     }
 
-    private String concatFilePathAndName(int numberOfLetters) {
+    private String concatFilePathAndName() {
         StringBuilder stringBuilder = new StringBuilder();
         if(wordsFolder != null && !wordsFolder.trim().isBlank()) {
             stringBuilder.append(wordsFolder);
@@ -59,7 +59,7 @@ public class FileWordRepository implements WordRepository {
 
     @Override
     public List<String> retrieveAllWords() {
-        return readWordsFromFile(numberOfLetters);
+        return readWordsFromFile();
     }
 
     @Override

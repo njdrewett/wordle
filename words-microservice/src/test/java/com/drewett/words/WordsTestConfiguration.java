@@ -3,6 +3,7 @@ package com.drewett.words;
 import com.drewett.words.repository.WordRepositoryCacheFactory;
 import com.drewett.words.repository.WordRepositoryFactory;
 import com.drewett.words.service.WordsService;
+import com.drewett.words.service.WordsServiceImpl;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 
@@ -21,6 +22,6 @@ public class WordsTestConfiguration {
 
     @Bean
     WordsService getWordService(){
-        return new WordsService(getWordRepositoryCacheFactory());
+        return new WordsServiceImpl(getWordRepositoryCacheFactory());
     }
 }
