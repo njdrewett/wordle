@@ -1,4 +1,4 @@
-#Wordle Microservice
+##Wordle Microservice
 
 Recreation of the popular Wordle game consisting of:
 
