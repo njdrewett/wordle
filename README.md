@@ -1,10 +1,15 @@
-#Wordle Microservice
+# Wordle Microservice
 
-Recreation of the popular Wordle game consisting of:
+## Recreation of the popular Wordle game consisting of:
 
-Word Service - Spring Boot Application Microservice with Rest API for random word retrieval and word validation, includes Unit and Integration Tests
-Wordle Javascript application via Node JS Server
+* Word Service 
+  * Spring Boot Application Microservice with Rest API for random word retrieval and word validation
+  * Configurable Word Length resources
+  * Scalable Service Arcticture 
+  * WARNING - Unsecure -Security WIP .
+ 
+* Wordle Javascript application via Node JS Server
 
-![Scrrenshot](screenshot.png)
+![Screenshot](screenshot.png)
 
 
